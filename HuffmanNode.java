@@ -3,7 +3,7 @@ package student;
 import provided.BinarySequence;
 
 public class HuffmanNode {
-    
+
     private HuffmanNode zero; //left
     private HuffmanNode one; //right
     private Character data;
@@ -48,7 +48,12 @@ public class HuffmanNode {
         return zero == null && one == null;
     }
 
-    public boolean isValidNode() {}
+    public boolean isValidNode() {
+        if (isLeaf()) {
+            return true;
+        }
+        return data == null && zero != null && one != null;
+    }
 
     public boolean isValidTree() {}
 
