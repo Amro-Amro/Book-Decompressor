@@ -15,24 +15,6 @@ public class HuffmanCodeBook {
     }
 
     public void addSequence(char c, BinarySequence seq) {
-        int idx = findPosition(c);
-
-        if (idx < size && letters[idx] == c) {
-            sequence[idx] = seq;
-        } else {
-
-            for (int i = size; i > idx; i--) {
-                letters[i] = letters[i - 1];
-                sequence[i] = sequence[i - 1];
-            }
-        }
-
-        letters[idx] = c;
-        sequence[idx] = seq;
-        size++;
-    }
-
-    public void addSequence(char c, BinarySequence seq) {
         if (size == letters.length) {
             resize();
         }
