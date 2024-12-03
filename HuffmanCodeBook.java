@@ -2,13 +2,13 @@ package student;
 
 import provided.BinarySequence;
 
-public class HuffmanCodeBookk {
+public class HuffmanCodeBook {
 
     private char[] letters;
     private BinarySequence[] sequence;
     private int size;
 
-    public HuffmanCodeBookk() {
+    public HuffmanCodeBook() {
         letters = new char[100];
         sequence =  new BinarySequence[100];
         size = 0;
