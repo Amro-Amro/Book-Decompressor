@@ -9,8 +9,8 @@ public class HuffmanCodeBook {
     private int size;
 
     public HuffmanCodeBook() {
-        letters = new char[100];
-        sequence =  new BinarySequence[100];
+        letters = new char[10];
+        sequence =  new BinarySequence[10];
         size = 0;
     }
 
