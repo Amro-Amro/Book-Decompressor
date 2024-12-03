@@ -21,7 +21,7 @@ public class HuffmanCodeTree {
     }
 
     public boolean isValid() {
-        return root.isValidTree();
+        return root != null && root.isValidTree();
     }
 
     public void put(BinarySequence seq, char letter) {
