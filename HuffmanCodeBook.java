@@ -9,8 +9,8 @@ public class HuffmanCodeBook {
     private int size;
 
     public HuffmanCodeBook() {
-        letters = new char[50];
-        sequence =  new BinarySequence[50];
+        letters = new char[100];
+        sequence =  new BinarySequence[100];
         size = 0;
     }
 
@@ -31,6 +31,40 @@ public class HuffmanCodeBook {
         sequence[idx] = seq;
         size++;
     }
+
+    public void addSequence(char c, BinarySequence seq) {
+        if (size == letters.length) {
+            resize();
+        }
+
+        int idx = findPosition(c);
+
+        if (idx < size && letters[idx] == c) {
+            sequence[idx] = seq;
+        } else {
+            for (int i = size; i > idx; i--) {
+                letters[i] = letters[i - 1];
+                sequence[i] = sequence[i - 1];
+            }
+
+            letters[idx] = c;
+            sequence[idx] = seq;
+            size++;
+        }
+    }
+
+    private void resize() {
+        int newSize = letters.length * 2;
+        char[] newLetters = new char[newSize];
+        BinarySequence[] newSequence = new BinarySequence[newSize];
+
+        System.arraycopy(letters, 0, newLetters, 0, letters.length);
+        System.arraycopy(sequence, 0, newSequence, 0, sequence.length);
+
+        letters = newLetters;
+        sequence = newSequence;
+    }
+
 
     public boolean contains(char letter) {
         int index = binarySearch(letter);
