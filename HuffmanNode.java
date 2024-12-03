@@ -55,6 +55,20 @@ public class HuffmanNode {
         return data == null && zero != null && one != null;
     }
 
-    public boolean isValidTree() {}
+    public boolean isValidTree() {
+        if (!isValidNode()) {
+            return false;
+        }
+
+        if (zero != null && !zero.isValidTree()) {
+            return false;
+        }
+
+        if (one != null && !one.isValidTree()) {
+            return false;
+        }
+
+        return true;
+    }
 
 }
