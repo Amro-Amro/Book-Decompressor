@@ -1,7 +1,7 @@
 Q1: Name: Amro Abu-atieh
 
 Q2: Any other notes for the grader:
-Thank you very for reviewing my code!
+Thank you very much for reviewing my code!
 
 Q3: Runtime for contains and getSequence methods:
 The runtime that I am saying I have for both the contains and getSequence methods is O(log(n)). n in this case is the number of charachetrs in the code book. I did this by making the Binary tree in Huffman Code Book effiecient allowing for a bettrr big O runtime.
