@@ -9,7 +9,7 @@ import provided.BinarySequence;
 public class HuffmanCodeTree {
 
     /**
-     * The root of the Huffman tree
+     * The root of the Huffman tree.
      */
     private HuffmanNode root;
 
