@@ -50,7 +50,7 @@ public class HuffmanNode {
 
     public boolean isValidNode() {
         if (isLeaf()) {
-            return true;
+            return data != null;
         }
         return data == null && zero != null && one != null;
     }
