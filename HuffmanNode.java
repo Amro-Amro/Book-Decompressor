@@ -15,7 +15,7 @@ public class HuffmanNode {
     
     /**
      * right child.
-     *
+     */
     private HuffmanNode one;
 
     /**
