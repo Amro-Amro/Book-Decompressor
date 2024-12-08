@@ -1,7 +1,5 @@
 package student;
 
-import provided.BinarySequence;
-
 /**
  * Represents a node in a Huffman tree. Each node can either hold a character or leaf node,
  * or point to other nodes based on the binary Huffman encoding.
@@ -12,7 +10,7 @@ public class HuffmanNode {
      * left child.
      */
     private HuffmanNode zero;
-    
+
     /**
      * right child.
      */
@@ -69,7 +67,7 @@ public class HuffmanNode {
     }
 
     /**
-     * @param zero The node to set as the right child.
+     * @param one The node to set as the right child.
      */
     public void setOne(HuffmanNode one) {
         this.one = one;
