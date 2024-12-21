@@ -1,5 +1,3 @@
-package student;
-
 /**
  * Represents a node in a Huffman tree. Each node can either hold a character or leaf node,
  * or point to other nodes based on the binary Huffman encoding.
