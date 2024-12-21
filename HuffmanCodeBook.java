@@ -1,5 +1,3 @@
-package student;
-
 import provided.BinarySequence;
 
 /**
